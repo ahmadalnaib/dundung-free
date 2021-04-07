@@ -5,8 +5,8 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                    <a href="/" class="inline-block py-4 md:py-0">
+                        <span class="p-1 text-xl font-black leading-none text-gray-900"><span>   <x-application-logo class="block h-32 w-auto fill-current text-gray-600" /></span><span class="text-indigo-600"></span></span>
                     </a>
                 </div>
 
