@@ -26,6 +26,22 @@
                     {{ $header }}
                 </div>
             </header>
+                <div class="text-center">
+                    @if(session('success_message'))
+                        <div x-data="{isVisible:true}"
+                             x-init="
+                 setTimeout(() => {
+                 isVisible=false
+                 },5000)
+                 "
+                             x-show.transition.duration.1000ms="isVisible"
+                             class="bg-green-400 text-center font-bold text-white rounded-full mt-4 py-4 px-4 inline-block"
+                        >
+                            {{session('success_message')}}
+
+                        </div>
+                    @endif
+                </div>
 
             <!-- Page Content -->
             <main>
